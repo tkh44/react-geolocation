@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-geolocation renders 1`] = `null`;
+
+exports[`react-geolocation renders with children 1`] = `null`;

@@ -1,0 +1,12 @@
+/coverage
+/demo/dist
+/dist
+/lib
+/es
+/node_modules
+/umd
+/es
+npm-debug.log
+.idea
+yarn.lock
+package-lock.json
