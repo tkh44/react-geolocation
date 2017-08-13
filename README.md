@@ -32,13 +32,13 @@ npm install -S react-geolocation
 
 ## Props
 
-[### enableHighAccuracy `boolean`](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions/enableHighAccuracy)
+### [enableHighAccuracy `boolean`](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions/enableHighAccuracy)
 
 
-[### timeout `number`](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions/timeout)
+### [timeout `number`](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions/timeout)
 
 
-[### maximumAge `number`](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions/maximumAge)
+### [maximumAge `number`](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions/maximumAge)
 
 
 ### render `function`
