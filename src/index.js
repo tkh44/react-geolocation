@@ -18,12 +18,14 @@ export default class Geolocation extends React.Component {
     }
 
     if (!('geolocation' in window.navigator)) {
-      if (this.props.lazy) {
-        return
-      }
-
-      this.getCurrentPosition()
+      return
     }
+
+    if (this.props.lazy) {
+      return
+    }
+
+    this.getCurrentPosition()
   }
 
   getCurrentPosition = () => {
