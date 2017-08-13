@@ -19,15 +19,26 @@ npm install -S react-geolocation
 
 ## Basic Usage
 ```javascript
-<Geolocation>
-  {({ fetchingPosition, position, error, getCurrentPosition }) =>
+<Geolocation
+  onSuccess={console.log}
+  render={({
+    fetchingPosition,
+    position: { coords: { latitude, longitude } = {} } = {},
+    error,
+    getCurrentPosition
+  }) =>
     <div>
-      <button onClick={getCurrentPosition}>Refresh Position</button>
+      <button onClick={getCurrentPosition}>Get Position</button>
+      {error &&
+        <div>
+          {error.message}
+        </div>}
       <pre>
-        {JSON.stringify(position)}
+        latitude: {latitude}
+        longitude: {longitude}
       </pre>
     </div>}
-</Geolocation>
+/>
 ```
 
 ## Props
