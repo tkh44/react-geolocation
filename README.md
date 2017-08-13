@@ -1,7 +1,7 @@
 
 
-# React Geolocation
-Declarative geolocation in React
+# react-geolocation
+🌎🛰 Declarative geolocation in React
 
 [![npm version](https://badge.fury.io/js/react-geolocation.svg)](https://badge.fury.io/js/react-geolocation)
 [![Build Status](https://travis-ci.org/tkh44/react-geolocation.svg?branch=master)](https://travis-ci.org/tkh44/react-geolocation)
