@@ -8,6 +8,7 @@
 [![codecov](https://codecov.io/gh/tkh44/react-geolocation/branch/master/graph/badge.svg)](https://codecov.io/gh/tkh44/react-geolocation)
 
 -   [Install](#install)
+-   [Basic Demo](https://codesandbox.io/s/l5yLpYDYJ)
 -   [Basic Usage](#basic-usage)
 -   [Props](#props)
 
