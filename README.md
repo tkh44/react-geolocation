@@ -8,6 +8,7 @@
 [![codecov](https://codecov.io/gh/tkh44/react-geolocation/branch/master/graph/badge.svg)](https://codecov.io/gh/tkh44/react-geolocation)
 
 -   [Install](#install)
+-   [Basic Demo](https://codesandbox.io/s/l5yLpYDYJ)
 -   [Basic Usage](#basic-usage)
 -   [Props](#props)
 
@@ -70,9 +71,8 @@ If true then the component will **not** perform the fetch on mount.
 You must use the `getCurrentPosition` named argument in order to initiate the request.
 
 ```javascript
-<Geolocation lazy>
-  {({fetchingPosition}) => {fetchingPosition && <div>Fetching Position</div>}} // renders nothing, fetch was not started
-</Geolocation>
+<Geolocation lazy render={({fetchingPosition}) => {fetchingPosition && <div>Fetching Position</div>}} /> 
+// renders nothing, fetch was not started
 ```
 
 
