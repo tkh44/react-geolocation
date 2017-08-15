@@ -28,6 +28,10 @@ export default class Geolocation extends React.Component {
     this.getCurrentPosition()
   }
 
+  componentWillUnmount () {
+    this.willUnmount = true
+  }
+
   getCurrentPosition = () => {
     const {
       enableHighAccuracy,
@@ -38,13 +42,18 @@ export default class Geolocation extends React.Component {
     } = this.props
 
     this.setState({ fetchingPosition: true })
+
     return window.navigator.geolocation.getCurrentPosition(
       position => {
+        if (this.willUnmount) return
+
         this.setState({ position, fetchingPosition: false }, () =>
           onSuccess(position)
         )
       },
       err => {
+        if (this.willUnmount) return
+
         this.setState({ err, fetchingPosition: false }, () => onError(err))
       },
       { enableHighAccuracy, timeout, maximumAge }
