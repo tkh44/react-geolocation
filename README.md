@@ -71,9 +71,8 @@ If true then the component will **not** perform the fetch on mount.
 You must use the `getCurrentPosition` named argument in order to initiate the request.
 
 ```javascript
-<Geolocation lazy>
-  {({fetchingPosition}) => {fetchingPosition && <div>Fetching Position</div>}} // renders nothing, fetch was not started
-</Geolocation>
+<Geolocation lazy render={({fetchingPosition}) => {fetchingPosition && <div>Fetching Position</div>}} /> 
+// renders nothing, fetch was not started
 ```
 
 
