@@ -21,7 +21,6 @@ npm install -S react-geolocation
 ## Basic Usage
 ```javascript
 <Geolocation
-  onSuccess={console.log}
   render={({
     fetchingPosition,
     position: { coords: { latitude, longitude } = {} } = {},
@@ -71,8 +70,16 @@ If true then the component will **not** perform the fetch on mount.
 You must use the `getCurrentPosition` named argument in order to initiate the request.
 
 ```javascript
-<Geolocation lazy render={({fetchingPosition}) => {fetchingPosition && <div>Fetching Position</div>}} /> 
-// renders nothing, fetch was not started
+<Geolocation 
+  lazy 
+  render={({getCurrentPosition, fetchingPosition}) => (
+    <div>
+      <button onClick={getCurrentPosition}>Get Current Position</button>
+      <div>Fetching Position: {fetchingPosition}</div>
+    </div>
+  )}
+/> 
+// renders "Fetching Position: false" until the button is clicked
 ```
 
 
