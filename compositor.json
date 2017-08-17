@@ -71,7 +71,9 @@
           "repo": "react-geolocation"
         }
       ],
-      "text": "v1.0.2"
+      "text": "v1.0.2",
+      "backgroundImage": "https://images.unsplash.com/photo-1487235829740-e0ac5a286e1c?dpr=2&auto=format&fit=crop&w=1080&h=722&q=80&cs=tinysrgb&crop=",
+      "image": ""
     },
     {
       "component": "article",
